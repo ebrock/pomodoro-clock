@@ -1,0 +1,191 @@
+colors {
+  #FF6C11
+  #FF3864
+  #2DE2E6
+  #261447
+  #0D0221
+  #023788
+  #650D89
+  #920075
+  #F6019D
+  #D40078
+  #241734
+  #2E2157
+  #FD3777
+  #F706CF
+  #FD1D53
+  #F9C80E
+  #FF4365
+  #540D6E
+  #791E94
+  #541388
+}
+
+html {
+  background-color: #0d0221;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 20px;
+  grid-template-areas:
+    "title"
+    "b-wrapper"
+    "s-wrapper"
+    "timer-wrapper"
+    "controls";
+
+  text-align: center;
+  background-color: #0d0221;
+  /* border: 1px solid pink; */
+}
+
+.title {
+  grid-area: title;
+  font-family: "Audiowide", cursive;
+  font-size: 45px;
+  color: #D40078;
+  border-bottom: 1px solid #D40078;
+  color: #7724fb;
+  border-bottom: 1px solid #7724fb;
+}
+
+.s-wrapper,
+.b-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "label label label"
+    "decrement length increment";
+
+  font-family: "Audiowide", cursive;
+  font-size: 20px;
+  color: #920075;
+}
+
+.label {
+  grid-area: label;
+}
+
+.decrement {
+  grid-area: decrement;
+  justify-self: end;
+}
+
+.length {
+  grid-area: length;
+  font-family: "Orbitron";
+  font-size: 40px;
+  width: 100px;
+  justify-self: center;
+  place-self: center;
+  color: #f6019d;
+
+
+}
+
+.increment {
+  grid-area: increment;
+}
+
+.decrement,
+.increment {
+  border: 4px outset #7724fb;
+  font-size: 55px;
+  width: 100px;
+  color: #1f9da1;
+
+}
+
+.s-wrapper {
+  grid-area: s-wrapper;
+}
+
+.b-wrapper {
+  grid-area: b-wrapper;
+}
+
+.timer-wrapper {
+  grid-area: timer-wrapper;
+  display: grid;
+  grid-template-areas:
+    "timer-label"
+    "time-left";
+
+  text-align: center;
+  font-family: "Audiowide", cursive;
+  font-size: 20px;
+  color: #f6019d;
+}
+
+.timer-label {
+  grid-area: timer-label;
+  color: #920075;
+}
+
+.time-left {
+  grid-area: time-left;
+  font-family: "Orbitron";
+  font-size: 40px;
+  /* color: #2DE2E6; */
+}
+
+.controls {
+  grid-area: controls;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "play-pause reset";
+
+  font-size: 25px;
+  color: #1f9da1;
+}
+
+.play-pause {
+  grid-area: play-pause;
+}
+
+.reset {
+  grid-area: reset;
+}
+
+@media (min-width: 685px) {
+  .wrapper {
+    grid-template-columns: auto auto;
+    grid-template-areas:
+      "title title"
+      "b-wrapper s-wrapper"
+      "timer-wrapper timer-wrapper"
+      "controls controls";
+
+    padding-top: 40px;
+    padding-right: 10%;
+    padding-left: 10%;
+
+  }
+  .title {
+    font-size: 45px;
+  }
+
+  .controls {
+    grid-gap: 150px;
+  }
+
+  .play-pause {
+    justify-self: end;
+  }
+
+  .reset {
+    justify-self: start;
+  }
+}
+
+@media (min-width: 1300px) {
+  .wrapper {
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+}
