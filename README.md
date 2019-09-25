@@ -2,7 +2,7 @@
 
 Pomodoro Clock is a React App study tool, designed and coded from scratch by me.
 
-Final product here: https://ericbrock.net/projects/5/public/index.html
+Final product [here](https://ericbrock.net/projects/5/public/index.html).
 
 ## Description
 The pomodoro clock is a timer with two countdowns, session and break. You do work during the session countdown, and you take a break during the break countdown. 
