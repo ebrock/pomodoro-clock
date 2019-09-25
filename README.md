@@ -12,4 +12,4 @@ This project is part of freeCodeCamp.org's curriculum, found here: [Front End Li
 ## Usage
 Click the "+" and "-" to increase and decrease time, respectively. After you decide on your limits, click the PLAY button. An alarm will play at the end of each countdown during a 3 second transition period. Then the next countdown begins. 
 
-You can pause the timer whenever you want. If you want to reset the values, simply click the reset button on the left side. 
+You can pause the timer whenever you want. If you want to reset the values, simply click the reset button on the right side. 
